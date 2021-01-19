@@ -1,0 +1,18 @@
+﻿@model GCD0705.AppDev.Models.Task
+@{
+	ViewBag.Title = "Details";
+}
+
+<h2>Task Details</h2>
+
+@Html.ActionLink("Back to My Tasks", "Index", "Tasks",
+	null,
+	new { @class = "btn btn-primary" })
+
+<ul>
+	<li>@Model.Id</li>
+	<li>@Model.Name</li>
+	<li>@Model.Description</li>
+	<li>@Model.DueDate.ToString()</li>
+</ul>
+
